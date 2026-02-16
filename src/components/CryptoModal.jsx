@@ -18,6 +18,11 @@ export default function CryptoModal({ close }) {
 
   const wallets = [
     {
+      name: "Litecoin (LTC)",
+      address: "ltc1qqaytrv3mgree7r40v72tcnvjc46ezeg6wqaxrn",
+      qr: ltcQR 
+    },
+    {
       name: "Bitcoin (BTC)",
       address: "bc1qnehznrcl9ryf97g4zwlezlcn9ny2zjne48zamy",
       qr: btcQR
@@ -26,12 +31,8 @@ export default function CryptoModal({ close }) {
       name: "USDT (ERC20)",
       address: "0x594B1751b1C2584d46ef48EA5300b011e1312d60",
       qr: usdtQR
-    },
-    {
-      name: "Litecoin (LTC)",
-      address: "ltc1qqaytrv3mgree7r40v72tcnvjc46ezeg6wqaxrn",
-      qr: ltcQR 
     }
+    
   ];
 
   return (
