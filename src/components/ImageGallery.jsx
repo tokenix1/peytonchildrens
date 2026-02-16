@@ -388,14 +388,14 @@ export default function ImageGallery() {
   }
 ];
   return (
-    <div className="mt-12 px-4 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="mt-12 px-4 max-w-6xl mx-auto grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-2">
       {images.map((image, index) => (
         <div
           key={index}
           onClick={() => setSelectedImage(image)}  // ✅ onClick here
           className="cursor-pointer"
         >
-          <div className="aspect-[4/3] overflow-hidden rounded-xl shadow-md">
+          <div className="aspect-[4/5] overflow-hidden shadow-md">
             <img
               src={image.src}
               alt={`gallery-${index}`}
